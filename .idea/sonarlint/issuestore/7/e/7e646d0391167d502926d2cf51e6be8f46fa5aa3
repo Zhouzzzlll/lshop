@@ -1,0 +1,7 @@
+
+q	java:S116"WRename this field "account_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒ¯ù¾şÿÿÿÿ
+o	java:S116"URename this field "account_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯á‰âûÿÿÿÿ
+p	java:S116"VRename this field "account_sex" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢±ö˜ùÿÿÿÿ
+l	java:S116"XRename this field "account_phone" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İñ
+b	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Å·—

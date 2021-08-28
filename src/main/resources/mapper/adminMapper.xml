@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.my.xxb.dao.adminDao">
+    <select id="LimitGetall" parameterType="Integer" resultMap="LimitGetorder">
+        select * from  `order` where  orderid limit #{curpage},#{pagesize}
+    </select>
+    <resultMap id="LimitGetorder" type="com.my.xxb.pojo.Order">
+        <result property="orderid" column="orderid" javaType="java.lang.Integer"/>
+        <result property="productbrand" column="productbrand" javaType="java.lang.String"/>
+        <result property="username" column="username" javaType="java.lang.String"/>
+        <result property="state" column="state" javaType="java.lang.String"/>
+        <result property="productprice" column="productprice" javaType="java.lang.String"/>
+        <result property="num" column="num" javaType="java.lang.String"/>
+    </resultMap>
+</mapper>

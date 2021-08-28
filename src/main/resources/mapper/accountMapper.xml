@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.my.xxb.dao.accountDao">
+    <select id="limitGetUser" parameterType="Integer" resultMap="limitGetuser">
+        select * from userinfo where  userid limit #{curpage},#{pagesize}
+    </select>
+    <resultMap id="limitGetuser" type="com.my.xxb.pojo.Userinfo">
+        <result property="userid" column="userid" javaType="java.lang.Integer"/>
+        <result property="username" column="username" javaType="java.lang.String"/>
+        <result property="sex" column="sex" javaType="java.lang.String"/>
+        <result property="addr" column="addr" javaType="java.lang.String"/>
+        <result property="phone" column="phone" javaType="java.lang.String"/>
+        <result property="collect" column="collect" javaType="java.lang.String"/>
+    </resultMap>
+</mapper>

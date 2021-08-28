@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.my.xxb.dao.ProductDao">
+    <select id="limitGetProduct" parameterType="Integer" resultMap="limitGetproduct">
+        select * from productdetail where  productid limit #{curpage},#{pagesize}
+    </select>
+    <resultMap id="limitGetproduct" type="com.my.xxb.pojo.Product">
+        <result property="productid" column="productid" javaType="java.lang.Integer"/>
+        <result property="productname" column="productname" javaType="java.lang.String"/>
+        <result property="productprice" column="productprice" javaType="java.lang.String"/>
+        <result property="productidimg" column="productidimg" javaType="java.lang.String"/>
+        <result property="productdesc" column="productdesc" javaType="java.lang.String"/>
+        <result property="productbrand" column="productbrand" javaType="java.lang.String"/>
+        <result property="productremarks" column="productremarks" javaType="java.lang.String"/>
+        <result property="productlevel" column="productlevel" javaType="java.lang.String"/>
+    </resultMap>
+</mapper>
